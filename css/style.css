@@ -1,0 +1,6 @@
+:root {
+    --orange: #fd6f00;
+    --dark: #1e1e1e;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--dark); color: white; font-family: sans-serif; }

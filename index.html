@@ -6,5 +6,158 @@
     <title>Shorena Badurashvili | Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="container header-content">
+        <div class="logo">SHORENA</div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#contact" class="btn-orange">Hire Me</a>
+      </div>
+    </header>
+    <section id="home" class="hero">
+      <div class="container hero-wrapper">
+        <div class="hero-text">
+          <span class="hi-text">Hi I am</span>
+          <span class="name-text">Shorena Badurashvili</span>
+          <h1>Technology <span>Teacher</span></h1>
+          <p>
+            IT Manager at Chiatura Public Schools. Specialist in digital
+            literacy and education technology.
+          </p>
+          <div class="social-links-hero">
+            <a
+              href="https://www.facebook.com/badurashvili.shorena"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://github.com/shorenashorena" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+          <a href="#contact" class="btn-orange" style="margin-top: 30px"
+            >Contact Me</a
+          >
+        </div>
+        <div class="hero-image">
+          <div class="img-circle-bg"></div>
+          <img id="sliderImage" src="images/1.jpg" alt="Hero Image" />
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="container about-content">
+        <div class="about-img">
+          <img src="images/shorena.jpg" alt="About Me" />
+        </div>
+        <div class="about-info">
+          <h2>About Me</h2>
+          <div class="skills-wrapper">
+            <div class="skill">
+              <label>Educational Technology</label>
+              <input type="range" class="progress-slider" value="95" disabled />
+            </div>
+            <div class="skill">
+              <label>Web Development (HTML/CSS)</label>
+              <input type="range" class="progress-slider" value="85" disabled />
+            </div>
+            <div class="skill">
+              <label>IT Management</label>
+              <input type="range" class="progress-slider" value="90" disabled />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="icon">💻</div>
+            <h3>Web Development</h3>
+          </div>
+          <div class="service-card">
+            <div class="icon">🏫</div>
+            <h3>IT Management</h3>
+          </div>
+          <div class="service-card">
+            <div class="icon">📚</div>
+            <h3>Tech Training</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-grid">
+          <div class="project">
+            <img src="images/p1.jpg" alt="Project" />
+            <h4>Intermediate Assignment</h4>
+            <a
+              href="https://shorenashorena.github.io/shualeduri"
+              target="_blank"
+              class="project-link"
+              >Open Website</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="testimonial-box-empty">
+          <p>No testimonials yet.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <form id="contactForm">
+          <div class="input-row">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <textarea
+            name="message"
+            placeholder="Write Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="btn-orange">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="container footer-content">
+        <div class="logo">SHORENA</div>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <p class="copy">© 2025 Shorena Badurashvili</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

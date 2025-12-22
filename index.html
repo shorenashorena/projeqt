@@ -11,7 +11,8 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <header class="container">
@@ -48,12 +49,21 @@
       <div class="hero-image">
         <div class="img-circle-bg"></div>
         <img id="sliderImage" src="images/1.jpg" alt="Hero" />
-       <div class="social-links-hero">
-    <a href="https://www.facebook.com/badurashvili.shorena" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://github.com/shorenashorena" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-</div>
+        <div class="social-links-hero">
+          <a
+            href="https://www.facebook.com/badurashvili.shorena"
+            target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://github.com/shorenashorena" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
     </section>
 
     <section id="about" class="about">
@@ -70,20 +80,42 @@
           <div class="skills-wrapper">
             <div class="skill-item">
               <label>Educational Technology</label>
-              <div class="bar"><div class="fill" style="width: 95%"></div></div>
+              <div class="bar"><div class="fill" data-width="95%"></div></div>
             </div>
             <div class="skill-item">
               <label>Web Development (HTML/CSS)</label>
-              <div class="bar"><div class="fill" style="width: 85%"></div></div>
+              <div class="bar"><div class="fill" data-width="85%"></div></div>
             </div>
             <div class="skill-item">
               <label>IT Management</label>
-              <div class="bar"><div class="fill" style="width: 90%"></div></div>
+              <div class="bar"><div class="fill" data-width="90%"></div></div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="services" class="services container">
+      <h2 class="section-title">Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Web Design</h3>
+          <p>პროფესიონალური და თანამედროვე ვებ-გვერდების დიზაინის შექმნა.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>App Design</h3>
+          <p>მობილური აპლიკაციების ინტერფეისის დაგეგმვა და დიზაინი.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h3>IT Training</h3>
+          <p>ციფრული წიგნიერების და ტექნოლოგიური უნარების სწავლება.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="projects" class="projects container">
       <h2 class="section-title">My Projects</h2>
       <div class="filter-tabs">
@@ -114,7 +146,34 @@
 
     <section id="testimonials" class="testimonials container">
       <h2 class="section-title">Testimonials</h2>
-      <div class="testimonial-placeholder"></div>
+      <div class="testi-wrapper">
+        <div class="testi-slide active">
+          <p>"ძალიან კმაყოფილი ვართ თანამშრომლობით."</p>
+          <h4>სახელი გვარი 1</h4>
+          <span>CEO, Company</span>
+        </div>
+        <div class="testi-slide">
+          <p>"ინოვაციური მიდგომები და მაღალი ხარისხი."</p>
+          <h4>სახელი გვარი 2</h4>
+          <span>Manager, School</span>
+        </div>
+        <div class="testi-slide">
+          <p>"საუკეთესო ტექნოლოგიური მხარდაჭერა და სწორი ხედვა."</p>
+          <h4>სახელი გვარი 3</h4>
+          <span>Director, IT Hub</span>
+        </div>
+        <div class="testi-slide">
+          <p>"კომუნიკაბელური და მაღალი პასუხისმგებლობის მქონე სპეციალისტი."</p>
+          <h4>სახელი გვარი 4</h4>
+          <span>Principal</span>
+        </div>
+      </div>
+      <div class="testi-dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+      </div>
     </section>
 
     <section id="contact" class="contact container">
@@ -125,13 +184,17 @@
           lectus netus in.
         </p>
       </div>
-      <form class="contact-form">
+      <form id="contactForm" class="contact-form">
         <div class="input-row">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <input type="text" placeholder="Your Website" />
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="website" placeholder="Your Website" />
         </div>
-        <textarea placeholder="Enter Your Message" required></textarea>
+        <textarea
+          name="message"
+          placeholder="Enter Your Message"
+          required
+        ></textarea>
         <div class="btn-center">
           <button type="submit" class="btn-orange">Contact Me</button>
         </div>
@@ -149,12 +212,17 @@
         <a href="#contact">Contact</a>
       </nav>
       <div class="footer-socials">
-    <a href="https://www.facebook.com/badurashvili.shorena" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://github.com/shorenashorena" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-      
-  </div>
+        <a href="https://www.facebook.com/badurashvili.shorena" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://github.com/shorenashorena" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
       <div class="footer-bottom">
         <p>© 2023 All Rights Reserved, Inc.</p>
       </div>
